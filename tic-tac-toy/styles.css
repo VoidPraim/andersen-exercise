@@ -1,0 +1,134 @@
+.wrap {
+  margin: 100px auto 0 auto;
+  background: #fafafa;
+  width: 700px;
+  height: 600px;
+  border: lightgray 1px solid;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.players_step {
+  border-bottom: lightgray 1px solid;
+  height: 120px;
+  display: block;
+  text-align: center;
+}
+
+.players {
+  background: white;
+  margin: 10px auto;
+  width: 400px;
+  height: 60px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: lightgray 1px solid;
+
+}
+
+.player {
+  width: 150px;
+  height: 30px;
+  margin-left: 10px;
+  margin-right: 10px;
+  border-radius: 10px;
+}
+
+.green_player {
+  background: green;
+}
+
+.green_player_active {
+  box-shadow: green 0 0 5px;
+}
+
+.red_player {
+  background: red;
+}
+
+.red_player_active {
+  box-shadow: red 0 0 5px;
+}
+
+
+
+.current_player {
+  font-family: "Segoe UI", sans-serif;
+  margin-bottom: 5px;
+}
+
+.reset_game {
+  border-top: lightgray 1px solid;
+  height: 80px;
+  text-align: center;
+}
+
+.reset_button {
+  margin: 5px auto;
+
+  width: 200px;
+  height: 50px;
+  background: dodgerblue;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: lightgray 1px solid;
+  border-radius: 10px;
+  cursor: pointer;
+  color: white;
+
+}
+
+.reset_text {
+  font-family: "Segoe UI", sans-serif;
+  font-size: 110%;
+}
+
+.reset_button:hover {
+  background: white;
+  color: black;
+}
+
+.reset_button:active {
+  box-shadow: dodgerblue 0 0 5px;
+}
+
+.game_area {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.game_block {
+  width: 385px;
+  height: 350px;
+  background: white;
+  border-radius: 10px;
+  padding: 15px;
+  border: lightgray 1px solid;
+}
+
+.game_active_area {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.game_square {
+  width: 125px;
+  height: 115px;
+  border: lightgray 1px solid;
+}
+
+.green_square {
+  background: green;
+}
+
+.red_square {
+  background: red;
+}
+
