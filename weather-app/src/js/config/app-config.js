@@ -5,3 +5,4 @@ const PRESSURE_TEXT = 'Давление (мб) - ';
 const TEMP_TEXT = 'Температура (градусы цельсия) - ';
 const MAX_TEMP_TEXT = 'Макс температура (градусы цельсия) - ';
 const MIN_TEMP_TEXT = 'Мин температура (градусы цельсия) - ';
+const KELVIN_DIFF =  273.15;

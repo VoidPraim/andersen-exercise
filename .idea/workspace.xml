@@ -21,9 +21,11 @@
   <component name="ChangeListManager">
     <list default="true" id="4d9cfbb5-d018-4bc7-b610-d77f1e573c8b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tic-tac-toy/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/tic-tac-toy/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tic-tac-toy/js/Game.js" beforeDir="false" afterPath="$PROJECT_DIR$/tic-tac-toy/js/Game.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tic-tac-toy/js/GameSquare.js" beforeDir="false" afterPath="$PROJECT_DIR$/tic-tac-toy/js/GameSquare.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/weather-app/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/weather-app/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/weather-app/src/css/weather-block.css" beforeDir="false" afterPath="$PROJECT_DIR$/weather-app/src/css/weather-block.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/weather-app/src/js/component/WeatherManager.js" beforeDir="false" afterPath="$PROJECT_DIR$/weather-app/src/js/component/WeatherManager.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/weather-app/src/js/config/app-config.js" beforeDir="false" afterPath="$PROJECT_DIR$/weather-app/src/js/config/app-config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/weather-app/src/js/service/WeatherService.js" beforeDir="false" afterPath="$PROJECT_DIR$/weather-app/src/js/service/WeatherService.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,6 +65,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Projects\intership\weather-app\src\json" />
       <recent name="D:\Projects\intership\weather-app\src" />
       <recent name="D:\Projects\intership\weather-app\js\configs" />
       <recent name="D:\Projects\intership\weather-app\js\services" />
@@ -81,6 +84,7 @@
       <workItem from="1601815152368" duration="55000" />
       <workItem from="1601836311677" duration="24000" />
       <workItem from="1601879731365" duration="10785000" />
+      <workItem from="1601890640344" duration="6709000" />
     </task>
     <servers />
   </component>
@@ -97,16 +101,17 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
     <state x="361" y="58" key="#Plugins" timestamp="1601815120329">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="361" y="58" key="#Plugins/0.0.1536.834@0.0.1536.834" timestamp="1601815120329" />
-    <state x="762" y="0" width="781" height="840" key="dock-window-1" timestamp="1601885369072">
+    <state x="762" y="0" width="781" height="840" maximized="true" key="dock-window-1" timestamp="1601896488274">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="762" y="0" width="781" height="840" key="dock-window-1/0.0.1536.834@0.0.1536.834" timestamp="1601885369072" />
+    <state x="762" y="0" width="781" height="840" maximized="true" key="dock-window-1/0.0.1536.834@0.0.1536.834" timestamp="1601896488274" />
     <state x="737" y="155" width="672" height="678" key="search.everywhere.popup" timestamp="1601815088401">
       <screen x="0" y="0" width="1536" height="834" />
     </state>

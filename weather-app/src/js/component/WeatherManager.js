@@ -14,6 +14,13 @@ class WeatherManager {
     const inputBlock = document.createElement('div');
     inputBlock.classList.add('city_input_block');
 
+    const dropdown = document.createElement('div');
+    dropdown.classList.add('dropdown');
+
+    this.dropdownContent = document.createElement('div');
+    this.dropdownContent.classList.add('dropdown_content');
+
+
     this.currentCityInput = document.createElement('input');
     this.currentCityInput.classList.add('city_input');
 
@@ -22,7 +29,10 @@ class WeatherManager {
     this.searchButton.innerText = SEARCH_BUTTON_TEXT;
     this.searchButton.addEventListener('click', this.#onSearchClick.bind(this));
 
-    inputBlock.append(this.currentCityInput);
+    dropdown.append(this.dropdownContent);
+
+    this.dropdownContent.append(this.currentCityInput);
+    inputBlock.append(dropdown);
     inputBlock.append(this.searchButton);
 
     this.wrapBlock.append(inputBlock);
@@ -141,8 +151,12 @@ class WeatherManager {
     document.body.append(this.wrapBlock);
   }
 
-  async setData() {
-    this.currentWeather = await this.service.getCurrentWeather(this.currentCityInput.value);
+  async setData(city) {
+    this.currentWeather = await this.service.getCurrentWeather(city);
+  }
+
+  async checkData() {
+    this.cityList = await this.service.checkMatches(this.currentCityInput.value);
   }
 
   fillData() {
@@ -153,25 +167,51 @@ class WeatherManager {
 
     this.timeValue.innerText = time;
 
-    this.feelsLikePropertyValue.innerText = Math.round(+this.currentWeather.main.feels_like - 273.15);
+    this.feelsLikePropertyValue.innerText = Math.round(+this.currentWeather.main.feels_like - KELVIN_DIFF);
     this.humidityPropertyValue.innerText = this.currentWeather.main.humidity;
     this.pressurePropertyValue.innerText = this.currentWeather.main.pressure;
 
-    this.tempPropertyValue.innerText = Math.round(+this.currentWeather.main.temp - 273.15);
-    this.tempMaxPropertyValue.innerText = Math.round(+this.currentWeather.main.temp_max - 273.15);
-    this.tempMinPropertyValue.innerText = Math.round(+this.currentWeather.main.temp_min - 273.15);
+    this.tempPropertyValue.innerText = Math.round(+this.currentWeather.main.temp - KELVIN_DIFF);
+    this.tempMaxPropertyValue.innerText = Math.round(+this.currentWeather.main.temp_max - KELVIN_DIFF);
+    this.tempMinPropertyValue.innerText = Math.round(+this.currentWeather.main.temp_min - KELVIN_DIFF);
 
   }
 
   async #onSearchClick() {
-    await this.setData();
+    await this.checkData();
+    this.clearDropdown();
+    if (this.cityList.length === 0) {
+      alert(`Данные не найдены ${this.currentCityInput.value}`);
+      return;
+    }
 
-    if (this.currentWeather.name !== this.currentCityInput.value) {
-      alert(`Данные найдены по городу ${this.currentCityInput.value}`)
+    this.updateCities();
+  }
+
+  clearDropdown() {
+    while (this.dropdownContent.lastChild !== this.dropdownContent.firstChild) {
+      this.dropdownContent.lastChild.removeEventListener('click', this.#onItemClick);
+      this.dropdownContent.removeChild(this.dropdownContent.lastChild);
     }
-    else {
-      this.infoBlock.style.visibility = 'visible';
-      this.fillData()
-    }
+  }
+
+  updateCities() {
+    this.cityList.forEach(({name}) => {
+      const dropElem = document.createElement('div');
+      dropElem.classList.add('dropdown_element');
+
+      dropElem.innerText = name;
+
+      dropElem.addEventListener('click', this.#onItemClick.bind(this))
+      this.dropdownContent.append(dropElem);
+    })
+  }
+
+  async #onItemClick(e) {
+    this.clearDropdown();
+    await this.setData(e.target.innerText);
+    this.infoBlock.style.visibility = 'visible';
+    this.fillData()
+    this.currentCityInput.value = '';
   }
 }
