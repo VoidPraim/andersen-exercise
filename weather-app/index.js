@@ -1,9 +1,5 @@
-var weatherService = new WeatherService();
+let weatherService = new WeatherService();
 
-  const manager = new WeatherManager(weatherService);
-  manager.create();
-  manager.show();
-
-function searchWeather() {
-  
-}
+const manager = new WeatherManager(weatherService);
+manager.create();
+manager.show();

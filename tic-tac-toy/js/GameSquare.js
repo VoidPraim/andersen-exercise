@@ -1,9 +1,4 @@
-const SQUARE_CLASS = 'game_square';
-const PLAYER1_SQUARE_CLASS = 'red_square';
-const PLAYER2_SQUARE_CLASS = 'green_square';
-const PLAYER1_COLOUR = 'red';
-const PLAYER2_COLOUR = 'green';
-const DEFAULT_COLOR = 'white';
+
 
 class GameSquare {
   constructor() {

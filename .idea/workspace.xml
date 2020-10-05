@@ -1,7 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="4d9cfbb5-d018-4bc7-b610-d77f1e573c8b" name="Default Changelist" comment="" />
+    <list default="true" id="4d9cfbb5-d018-4bc7-b610-d77f1e573c8b" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tic-tac-toy/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/tic-tac-toy/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tic-tac-toy/js/Game.js" beforeDir="false" afterPath="$PROJECT_DIR$/tic-tac-toy/js/Game.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tic-tac-toy/js/GameSquare.js" beforeDir="false" afterPath="$PROJECT_DIR$/tic-tac-toy/js/GameSquare.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -15,6 +38,9 @@
         <option value="JavaScript File" />
       </list>
     </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1iJJF9ZhbiSmJ9ToLe5qzsVYw4e" />
   <component name="ProjectViewState">
@@ -35,6 +61,13 @@
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Projects\intership\weather-app\src" />
+      <recent name="D:\Projects\intership\weather-app\js\configs" />
+      <recent name="D:\Projects\intership\weather-app\js\services" />
+    </key>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -43,17 +76,40 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1601619654744</updated>
-      <workItem from="1601619655787" duration="6796000" />
+      <workItem from="1601619655787" duration="10603000" />
+      <workItem from="1601814574320" duration="541000" />
+      <workItem from="1601815152368" duration="55000" />
+      <workItem from="1601836311677" duration="24000" />
+      <workItem from="1601879731365" duration="10785000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="WindowStateProjectService">
-    <state x="737" y="155" width="672" height="678" key="search.everywhere.popup" timestamp="1601623164534">
+    <state x="361" y="58" key="#Plugins" timestamp="1601815120329">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="737" y="155" width="672" height="678" key="search.everywhere.popup/0.0.1536.834@0.0.1536.834" timestamp="1601623164534" />
+    <state x="361" y="58" key="#Plugins/0.0.1536.834@0.0.1536.834" timestamp="1601815120329" />
+    <state x="762" y="0" width="781" height="840" key="dock-window-1" timestamp="1601885369072">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="762" y="0" width="781" height="840" key="dock-window-1/0.0.1536.834@0.0.1536.834" timestamp="1601885369072" />
+    <state x="737" y="155" width="672" height="678" key="search.everywhere.popup" timestamp="1601815088401">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="737" y="155" width="672" height="678" key="search.everywhere.popup/0.0.1536.834@0.0.1536.834" timestamp="1601815088401" />
   </component>
 </project>

@@ -1,12 +1,3 @@
-const PLAYER1 = {
-  name: 'Красный',
-  value: 'red'
-};
-const PLAYER2 = {
-  name: 'Зеленый',
-  value: 'green'
-};
-const RESET_TEXT = 'Начать заново';
 
 class Game {
   constructor() {
